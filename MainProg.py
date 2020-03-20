@@ -1,10 +1,17 @@
 import subprocess as sub
 from pathlib import Path
+import os
 
-margotBash = 'home/Scrivania/Tesi/predictor/run_margot.sh'
-sample = 'home/Scrivania/Tesi/predictor/sample.txt'
-outDir = 'home/Scrivania/Tesi/predictor/output'
+# Save the current working directory for restoring it after running margot
+pythonCwd = os.getcwd()
+home = str(Path.home())
+# Sample.txt will be replaced by the user's input
+inputFile = 'sample.txt'
+outputDir = 'output/'
+# Change current working directory with the margot one, otherwise it doesn't work
+os.chdir(home + '/Scrivania/Tesi/predictor')
 print("Start")
-# sub.Popen(['bash', margotBash, sample, outDir])
-home = Path.
-sub.Popen('/home/Scrivania/Tesi/tesi_py/prova.sh')
+p = sub.Popen(['bash', 'run_margot.sh', inputFile, outputDir])
+# Wait until bash program has finished
+p.communicate()
+print("Finish")
