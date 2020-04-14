@@ -1,0 +1,18 @@
+{"intents": [
+		{"tag": "greeting",
+		 "patterns": ["Hi there", "Hello there", "hi", "hello"],
+		 "responses": ["General Kenobi"],
+		 "context": [""]
+		},
+		{"tag": "margot",
+		 "patterns": ["Run Margot", "margot", "analise my sentence", "analise"],
+		 "responses": ["I'll run margot"],
+		 "context": [""]
+		},
+		{"tag": "noanswer",
+		 "patterns": [],
+		 "responses": ["I can't understand", "Please retry"],
+		 "context": [""]
+		}
+	]
+}

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a60bef8c-53dc-4dc0-b31b-c2db8dec9ac8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tesi_py.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tesi_py.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainProg.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainProg.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +33,30 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.MainProg">
+    <configuration name="Gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tesi_py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Gui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="MainProg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tesi_py" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -56,6 +81,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.MainProg" />
+        <item itemvalue="Python.Gui" />
       </list>
     </recent_temporary>
   </component>
@@ -73,29 +99,64 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1897" height="275" key="GridCell.Tab.0.bottom" timestamp="1586882730553">
+    <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586884147224">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586882730553" />
+    <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586884147224" />
+    <state width="1897" height="340" key="GridCell.Tab.0.bottom" timestamp="1586893008571">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1897" height="340" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586893008571" />
     <state width="1833" height="403" key="GridCell.Tab.0.bottom/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018189" />
-    <state width="1897" height="275" key="GridCell.Tab.0.center" timestamp="1586882730553">
+    <state width="1897" height="340" key="GridCell.Tab.0.center" timestamp="1586893008571">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="275" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586882730553" />
+    <state width="1897" height="340" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586893008571" />
     <state width="1833" height="403" key="GridCell.Tab.0.center/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018188" />
-    <state width="1897" height="275" key="GridCell.Tab.0.left" timestamp="1586882730552">
+    <state width="1897" height="340" key="GridCell.Tab.0.left" timestamp="1586893008571">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="275" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586882730552" />
+    <state width="1897" height="340" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586893008571" />
     <state width="1833" height="403" key="GridCell.Tab.0.left/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018188" />
-    <state width="1897" height="275" key="GridCell.Tab.0.right" timestamp="1586882730553">
+    <state width="1897" height="340" key="GridCell.Tab.0.right" timestamp="1586893008571">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="275" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586882730553" />
+    <state width="1897" height="340" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586893008571" />
     <state width="1833" height="403" key="GridCell.Tab.0.right/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018189" />
+    <state width="1897" height="340" key="GridCell.Tab.1.bottom" timestamp="1586893008571">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1897" height="340" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586893008571" />
+    <state width="1897" height="340" key="GridCell.Tab.1.center" timestamp="1586893008571">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1897" height="340" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586893008571" />
+    <state width="1897" height="340" key="GridCell.Tab.1.left" timestamp="1586893008571">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1897" height="340" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586893008571" />
+    <state width="1897" height="340" key="GridCell.Tab.1.right" timestamp="1586893008571">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1897" height="340" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586893008571" />
+    <state x="843" y="154" width="1022" height="737" key="SettingsEditor" timestamp="1586887315005">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="843" y="154" width="1022" height="737" key="SettingsEditor/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586887315005" />
     <state x="648" y="381" key="com.intellij.ide.util.TipDialog" timestamp="1584699909476">
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
     <state x="648" y="381" key="com.intellij.ide.util.TipDialog/64.27.1856.1053@64.27.1856.1053" timestamp="1584699909476" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MainProg.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
