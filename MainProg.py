@@ -9,7 +9,8 @@ home = str(Path.home())
 inputFile = 'sample.txt'
 outputDir = 'output/'
 # Change current working directory with the margot one, otherwise it doesn't work
-os.chdir(home + '/Scrivania/Tesi/predictor')
+os.chdir("../predictor")
+
 print("Start")
 p = sub.Popen(['bash', 'run_margot.sh', inputFile, outputDir])
 # Wait until bash program has finished
