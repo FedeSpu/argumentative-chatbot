@@ -16,6 +16,7 @@ classes = pickle.load(open('classes.pkl', 'rb'))
 
 def chatbot_response(text):
     ints = predict_class(text, model)
+    # if ints is margot open some window
     res = getResponse(ints, intents)
     return res
 
@@ -83,7 +84,7 @@ def send():
 
 
 base = Tk()
-base.title("Hello")
+base.title("Argumentation Mining")
 base.geometry("400x500")
 base.resizable(width=FALSE, height=FALSE)
 # Create Chat window
@@ -93,7 +94,7 @@ ChatLog.config(state=DISABLED)
 scrollbar = Scrollbar(base, command=ChatLog.yview, cursor="heart")
 ChatLog['yscrollcommand'] = scrollbar.set
 # Create Button to send message
-SendButton = Button(base, font=("Verdana",12,'bold'), text="Send", width="12", height=5,
+SendButton = Button(base, font=("Verdana", 12, 'bold'), text="Send", width="12", height=5,
                     bd=0, bg="#32de97", activebackground="#3c9d9b",fg='#ffffff',
                     command= send )
 # Create the box to enter message
