@@ -1,0 +1,50 @@
+Pandas -> libreria python 
+Pandas.DataFrame -> equivalente foglio excel, una matrice
+Pandas.Read_CSV -> legge file excel (separatore tab)
+
+Dataset -> claim + evidence
+1) identificare input utente (claim or evidence) -> Margot (portable -> script Shell (apribile con pOpen SoupProcess Python))
+2) confronto con input e la conoscenza specifica, che restituisce i k topic più pertinenti ({Da definire} -> tool chatbot)
+3) Similarità (da frase a numero)
+
+Fase 2: Ranking
+Si basa su similarità. Bisogna confrontare frasi margot con frasi del database: matrice nxm (n=margot, m=dataset). Margot da info
+su input utente: che tipo di argomentazione è oppure se non lo è. Si potrebbe fare tutte frasi di margot con tutte frasi dataset
+e prendo i top k elementi di ciascuna riga (k<m). Viene una matrice nxk. Si può filtrare ancora e si possono restituire i valori
+più alti in verticale. 
+
+Posso considerare solo gli n argomentativi (di quelle non agr non mi interessa). Confronto tutte evidence di margot con tutte
+evidence di dataset e stesso con i claim. 
+
+Op. similarità: ML ha bisogno di passare da testo a numero (reali). Frase può essere convertita con "Bag of word": dizionario di
+parole associate ad un numero (vocabolario estratto da database). Creato un vettore lungo come vocabolario
+(ciao come va [1,1,1,0] con cane come 4a parola). Altrimenti possiamo mettere l'occorrenza, la frequenza (tf), pesare di più le parole
+che cadono meno o di più (idf inverse d.. frequency). 
+Similarità per numero di parole in comune. Si può ricondurre le parole alla loro radice (verbi all'infinito) -> nltk (lemmatizer)
+Grado di overlapping (numero parole comune / (lung(1a frase) + lung(2a frase))) tra due frasi. Indice di Jaccard: info su grado di
+overlapping di due insiemi. 
+Oppure con bag of word con prodotto vettoriale coseno (similarità coseno).
+Se sono binari distanza di Hemming.
+
+Sono tutte similirità a livello lessicale. 
+
+Step successivo: tuple di parole, non più singole parole. Unigrammi (n-grams) tuple adiacenti di grado n. Si cerca di catturare
+gradi di complessità maggiore cercando di catturare la frase. Solitamente n-grammi da 1 a 3/4. Skip-n-grams, più intelligente e 
+può saltare le parole, creando tuple di parole non adiacenti. Aumenta grandezza del vocabolario. 
+
+Step successivo: modelli con già rappresentazione vettoriale. Modello che preso in input la frase restituisce un vettore (distanza 
+euclidea e tutto le altre). Modelli hanno un vocabolario già dentro. Modelli embadding (operazione di trasformazione): passo
+da parola a sua rappresentazione numerica. Modelli che danno una matrice o vettore. 
+
+Come potrei fare: modelli che restituiscono vettori. Per similarità si può usare clustering: insieme di punti voglio individuare
+i gruppi più rappresentativi di questi punti -> per lo spazio di vettori piazza dei cluster (punti base - centroide) e prende
+tutti i punti più vicini. Aggiorno poi la posizione dei centroidi per punti medi, etc... -> metodo di clustering più facile
+è key-link. 
+
+Rappresento database in vettori, clusterizzo (claim - evidence) e confronto la frase solo con i cluster. 
+Per ora possiamo confrontare solo evidence con evidence e claim tra loro. 
+
+1) Passare da testo a numero (bag of word (n-grammi) oppure usare modelli specifici) 
+2) Definire 1 o più metriche
+3) Similarità (prodotto scalare, SIMILARITà COSENO, distanza ...l2?, distanza Hemming)
+4) Restituire un ranking (top 1,3,6..., magari scelto dall'utente)
