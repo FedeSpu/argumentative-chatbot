@@ -5,13 +5,18 @@ import numpy as np
 from keras.models import load_model
 import json
 import random
+import time
 from tkinter import *
+from MargotIO import MargotIO
+
+global isClosing
 
 model = load_model('chatbot_model.h5')
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents.json').read())
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
+isClosing = False
 
 
 def chatbot_response(text):
@@ -42,13 +47,13 @@ def bow(sentence, words, show_details=True):
     # bag of words - matrix of N words, vocabulary matrix
     bag = [0]*len(words)
     for s in sentence_words:
-        for i,w in enumerate(words):
+        for i, w in enumerate(words):
             if w == s:
                 # assign 1 if current word is in the vocabulary position
                 bag[i] = 1
                 if show_details:
                     print ("found in bag: %s" % w)
-    return(np.array(bag))
+    return np.array(bag)
 
 
 def clean_up_sentence(sentence):
@@ -60,12 +65,19 @@ def clean_up_sentence(sentence):
 
 
 def getResponse(ints, intents_json):
+    global isClosing
     tag = ints[0]['intent']
+    if tag == 'margot':
+        margot.show()
+    elif tag == 'goodbye':
+        isClosing = True
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
         if i['tag'] == tag:
             result = random.choice(i['responses'])
             break
+    if tag == 'options':
+        result = result + ' [say run margot, margot, analise]'
     return result
 
 
@@ -76,13 +88,18 @@ def send():
     if msg != '':
         ChatLog.config(state=NORMAL)
         ChatLog.insert(END, "You: " + msg + '\n\n')
-        ChatLog.config(foreground="#442265", font=("Verdana", 12 ))
+        ChatLog.config(foreground="#442265", font=("Verdana", 12))
         res = chatbot_response(msg)
         ChatLog.insert(END, "Bot: " + res + '\n\n')
         ChatLog.config(state=DISABLED)
         ChatLog.yview(END)
+        base.update()
+        if isClosing:
+            time.sleep(2)
+            sys.exit(0)
 
 
+margot = MargotIO()
 base = Tk()
 base.title("Argumentation Mining")
 base.geometry("400x500")
@@ -95,10 +112,10 @@ scrollbar = Scrollbar(base, command=ChatLog.yview, cursor="heart")
 ChatLog['yscrollcommand'] = scrollbar.set
 # Create Button to send message
 SendButton = Button(base, font=("Verdana", 12, 'bold'), text="Send", width="12", height=5,
-                    bd=0, bg="#32de97", activebackground="#3c9d9b",fg='#ffffff',
-                    command= send )
+                    bd=0, bg="#32de97", activebackground="#3c9d9b", fg='#ffffff',
+                    command=send)
 # Create the box to enter message
-EntryBox = Text(base, bd=0, bg="white",width="29", height="5", font="Arial")
+EntryBox = Text(base, bd=0, bg="white", width="29", height="5", font="Arial")
 # EntryBox.bind("<Return>", send)
 # Place all components on the screen
 scrollbar.place(x=376, y=6, height=386)
