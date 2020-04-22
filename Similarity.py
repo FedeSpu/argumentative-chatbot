@@ -11,6 +11,7 @@ f = open("prova2", "r")
 line = f.read()
 docs.append(line)
 f.close()
+
 cv = CountVectorizer()
 x = cv.fit_transform(docs)
 print(cv.get_feature_names())
@@ -27,5 +28,10 @@ for i in range(0, len(x.toarray())):
     res.append((cosine_similarity(rowSh, testoSh)[0][0], i))
 
 res.sort(reverse=True)
+print(res)
 best = docs[res[0][1]]
 print(best)
+
+print(cv.vocabulary_)
+# saved file in npy -> only load
+# np.load(nome.npy, allow_pickle=True).item()

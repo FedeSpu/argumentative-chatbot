@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a60bef8c-53dc-4dc0-b31b-c2db8dec9ac8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Similarity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Similarity.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,28 +148,28 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586884147224" />
-    <state width="1897" height="275" key="GridCell.Tab.0.bottom" timestamp="1587485551025">
+    <state width="1897" height="252" key="GridCell.Tab.0.bottom" timestamp="1587573191953">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587485551025" />
+    <state width="1897" height="252" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587573191953" />
     <state width="1833" height="403" key="GridCell.Tab.0.bottom/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018189" />
     <state width="1827" height="340" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888295" />
-    <state width="1897" height="275" key="GridCell.Tab.0.center" timestamp="1587485551025">
+    <state width="1897" height="252" key="GridCell.Tab.0.center" timestamp="1587573191953">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="275" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587485551025" />
+    <state width="1897" height="252" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587573191953" />
     <state width="1833" height="403" key="GridCell.Tab.0.center/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018188" />
     <state width="1827" height="340" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888295" />
-    <state width="1897" height="275" key="GridCell.Tab.0.left" timestamp="1587485551025">
+    <state width="1897" height="252" key="GridCell.Tab.0.left" timestamp="1587573191953">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="275" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587485551025" />
+    <state width="1897" height="252" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587573191953" />
     <state width="1833" height="403" key="GridCell.Tab.0.left/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018188" />
     <state width="1827" height="340" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888295" />
-    <state width="1897" height="275" key="GridCell.Tab.0.right" timestamp="1587485551025">
+    <state width="1897" height="252" key="GridCell.Tab.0.right" timestamp="1587573191953">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="275" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587485551025" />
+    <state width="1897" height="252" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587573191953" />
     <state width="1833" height="403" key="GridCell.Tab.0.right/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018189" />
     <state width="1827" height="340" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888295" />
     <state width="1897" height="340" key="GridCell.Tab.1.bottom" timestamp="1587485537496">
@@ -220,11 +220,6 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/MainProg.py</url>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Similarity.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
