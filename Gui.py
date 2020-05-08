@@ -8,9 +8,12 @@ import random
 import time
 from tkinter import *
 from MargotIO import MargotIO
+import os.path
 
 global isClosing
 
+dir_path = os.path.dirname(os.path.realpath(__file__))
+os.chdir(dir_path)
 model = load_model('chatbot_model.h5')
 lemmatizer = WordNetLemmatizer()
 intents = json.loads(open('intents.json').read())
@@ -19,9 +22,16 @@ classes = pickle.load(open('classes.pkl', 'rb'))
 isClosing = False
 
 
+def ev_to_str(ev):
+    str1 = ""
+    for el in ev:
+        str1 += "Confidence " + str(el[1]) + ":\n" + str(el[0]) + "\n\n"
+    return str1
+
+
+
 def chatbot_response(text):
     ints = predict_class(text, model)
-    # if ints is margot open some window
     res = getResponse(ints, intents)
     return res
 
@@ -78,6 +88,9 @@ def getResponse(ints, intents_json):
             break
     if tag == 'options':
         result = result + ' [say run margot, margot, analise]'
+    elif tag == 'show':
+        # result = margot.get_ev()[0][0]
+        result = ev_to_str(margot.get_ev())
     return result
 
 
@@ -102,10 +115,10 @@ def send():
 margot = MargotIO()
 base = Tk()
 base.title("Argumentation Mining")
-base.geometry("400x500")
+base.geometry("800x500")
 base.resizable(width=FALSE, height=FALSE)
 # Create Chat window
-ChatLog = Text(base, bd=0, bg="white", height="8", width="50", font="Arial",)
+ChatLog = Text(base, bd=0, bg="white", height="8", width="90", font="Arial",)
 ChatLog.config(state=DISABLED)
 # Bind scrollbar to Chat window
 scrollbar = Scrollbar(base, command=ChatLog.yview, cursor="heart")
@@ -118,8 +131,8 @@ SendButton = Button(base, font=("Verdana", 12, 'bold'), text="Send", width="12",
 EntryBox = Text(base, bd=0, bg="white", width="29", height="5", font="Arial")
 # EntryBox.bind("<Return>", send)
 # Place all components on the screen
-scrollbar.place(x=376, y=6, height=386)
-ChatLog.place(x=6, y=6, height=386, width=370)
-EntryBox.place(x=128, y=401, height=90, width=265)
+scrollbar.place(x=776, y=6, height=386)
+ChatLog.place(x=6, y=6, height=386, width=770)
+EntryBox.place(x=128, y=401, height=90, width=665)
 SendButton.place(x=6, y=401, height=90)
 base.mainloop()

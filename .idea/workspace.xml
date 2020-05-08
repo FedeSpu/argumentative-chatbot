@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a60bef8c-53dc-4dc0-b31b-c2db8dec9ac8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/AnaliseMargotOut.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReadDataSet.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Similarity_prova.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prova_renforcement.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MargotIO.py" beforeDir="false" afterPath="$PROJECT_DIR$/MargotIO.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Similarity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatbot_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot_model.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/classes.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intents.json" beforeDir="false" afterPath="$PROJECT_DIR$/intents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/words.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/words.pkl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +42,28 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Similarity">
+  <component name="RunManager" selected="Python.prova_renforcement">
+    <configuration name="AnaliseMargotOut" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tesi_py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AnaliseMargotOut.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Gui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tesi_py" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -75,7 +106,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MargotIO" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="prova" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tesi_py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -87,7 +118,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MargotIO.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prova.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -96,7 +127,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Similarity" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="prova_renforcement" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tesi_py" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -108,7 +139,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Similarity.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/prova_renforcement.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -119,10 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Similarity" />
+        <item itemvalue="Python.prova_renforcement" />
+        <item itemvalue="Python.prova" />
         <item itemvalue="Python.Gui" />
-        <item itemvalue="Python.MargotIO" />
         <item itemvalue="Python.MainProg" />
+        <item itemvalue="Python.AnaliseMargotOut" />
       </list>
     </recent_temporary>
   </component>
@@ -148,49 +180,53 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="418" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586884147224" />
-    <state width="1897" height="252" key="GridCell.Tab.0.bottom" timestamp="1587573191953">
+    <state x="619" y="355" width="672" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588951242425">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="252" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587573191953" />
+    <state x="619" y="355" width="672" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1588951242425" />
+    <state width="1897" height="252" key="GridCell.Tab.0.bottom" timestamp="1588954766080">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1897" height="252" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1588954766080" />
     <state width="1833" height="403" key="GridCell.Tab.0.bottom/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018189" />
     <state width="1827" height="340" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888295" />
-    <state width="1897" height="252" key="GridCell.Tab.0.center" timestamp="1587573191953">
+    <state width="1897" height="252" key="GridCell.Tab.0.center" timestamp="1588954766080">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="252" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587573191953" />
+    <state width="1897" height="252" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1588954766080" />
     <state width="1833" height="403" key="GridCell.Tab.0.center/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018188" />
     <state width="1827" height="340" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888295" />
-    <state width="1897" height="252" key="GridCell.Tab.0.left" timestamp="1587573191953">
+    <state width="1897" height="252" key="GridCell.Tab.0.left" timestamp="1588954766080">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="252" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587573191953" />
+    <state width="1897" height="252" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1588954766080" />
     <state width="1833" height="403" key="GridCell.Tab.0.left/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018188" />
     <state width="1827" height="340" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888295" />
-    <state width="1897" height="252" key="GridCell.Tab.0.right" timestamp="1587573191953">
+    <state width="1897" height="252" key="GridCell.Tab.0.right" timestamp="1588954766080">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="252" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587573191953" />
+    <state width="1897" height="252" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1588954766080" />
     <state width="1833" height="403" key="GridCell.Tab.0.right/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018189" />
     <state width="1827" height="340" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888295" />
-    <state width="1897" height="340" key="GridCell.Tab.1.bottom" timestamp="1587485537496">
+    <state width="1897" height="305" key="GridCell.Tab.1.bottom" timestamp="1588953458354">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="340" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587485537496" />
+    <state width="1897" height="305" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1588953458354" />
     <state width="1827" height="340" key="GridCell.Tab.1.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888296" />
-    <state width="1897" height="340" key="GridCell.Tab.1.center" timestamp="1587485537496">
+    <state width="1897" height="305" key="GridCell.Tab.1.center" timestamp="1588953458354">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="340" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587485537496" />
+    <state width="1897" height="305" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1588953458354" />
     <state width="1827" height="340" key="GridCell.Tab.1.center/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888296" />
-    <state width="1897" height="340" key="GridCell.Tab.1.left" timestamp="1587485537496">
+    <state width="1897" height="305" key="GridCell.Tab.1.left" timestamp="1588953458354">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="340" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587485537496" />
+    <state width="1897" height="305" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1588953458354" />
     <state width="1827" height="340" key="GridCell.Tab.1.left/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888295" />
-    <state width="1897" height="340" key="GridCell.Tab.1.right" timestamp="1587485537496">
+    <state width="1897" height="305" key="GridCell.Tab.1.right" timestamp="1588953458354">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="340" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1587485537496" />
+    <state width="1897" height="305" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1588953458354" />
     <state width="1827" height="340" key="GridCell.Tab.1.right/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888296" />
     <state x="843" y="154" width="1022" height="737" key="SettingsEditor" timestamp="1587478021968">
       <screen x="0" y="27" width="1920" height="1053" />
@@ -201,6 +237,10 @@
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
     <state x="648" y="381" key="com.intellij.ide.util.TipDialog/64.27.1856.1053@64.27.1856.1053" timestamp="1584699909476" />
+    <state x="439" y="141" width="1031" height="831" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1588084085962">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="439" y="141" width="1031" height="831" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1588084085962" />
     <state x="458" y="284" width="1638" height="706" key="dock-window-1" timestamp="1586947905363">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -216,12 +256,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MainProg.py</url>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>

@@ -2,6 +2,8 @@ import subprocess as sub
 from pathlib import Path
 import os
 from tkinter import *
+from AnaliseMargotOut import AnaliseMargotOut
+import Similarity as sim
 
 
 class MargotIO:
@@ -45,8 +47,22 @@ class MargotIO:
             p = sub.Popen(['bash', 'run_margot.sh', input_file, output_dir])
             # Wait until bash program has finished
             p.communicate()
+            self.ev = self.__analise()
             print("Finish")
             self.dispose()
 
     def dispose(self):
         self.base.destroy()
+
+    def __analise(self):
+        amo = AnaliseMargotOut()
+        ev = amo.get_all_evidence()
+        cl = amo.get_all_claim()
+        cl_ev = amo.get_all_claim_evidence()
+        return sim.get_n_similarity_ev(ev[0], 3)
+
+    def get_ev(self):
+        if hasattr(self, 'ev'):
+            return self.ev
+        else:
+            return None
