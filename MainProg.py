@@ -1,3 +1,4 @@
+# MODEL FOR CHATBOT INTERACTION
 import nltk
 from nltk.stem import WordNetLemmatizer
 import json

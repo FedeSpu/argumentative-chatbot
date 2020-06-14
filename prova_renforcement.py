@@ -1,3 +1,4 @@
+# EPSILON GREEDY (TEST)
 import random
 import numpy as np
 dataset = ["videogames", "politics", "economics", "arts", "news", "abortion", "university", "school", "games", "spread"]

@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a60bef8c-53dc-4dc0-b31b-c2db8dec9ac8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AnaliseMargotOut.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReadDataSet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Similarity_prova.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prova_renforcement.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainProg.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainProg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MargotIO.py" beforeDir="false" afterPath="$PROJECT_DIR$/MargotIO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/Similarity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatbot_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/chatbot_model.h5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/classes.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intents.json" beforeDir="false" afterPath="$PROJECT_DIR$/intents.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/words.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/words.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prova_renforcement.py" beforeDir="false" afterPath="$PROJECT_DIR$/prova_renforcement.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +36,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.prova_renforcement">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Gui">
     <configuration name="AnaliseMargotOut" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tesi_py" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -150,10 +149,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.prova_renforcement" />
-        <item itemvalue="Python.prova" />
         <item itemvalue="Python.Gui" />
         <item itemvalue="Python.MainProg" />
+        <item itemvalue="Python.prova_renforcement" />
+        <item itemvalue="Python.prova" />
         <item itemvalue="Python.AnaliseMargotOut" />
       </list>
     </recent_temporary>
@@ -184,28 +183,28 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="619" y="355" width="672" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1588951242425" />
-    <state width="1897" height="252" key="GridCell.Tab.0.bottom" timestamp="1588954766080">
+    <state width="1897" height="252" key="GridCell.Tab.0.bottom" timestamp="1592144457777">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="252" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1588954766080" />
+    <state width="1897" height="252" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1592144457777" />
     <state width="1833" height="403" key="GridCell.Tab.0.bottom/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018189" />
     <state width="1827" height="340" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888295" />
-    <state width="1897" height="252" key="GridCell.Tab.0.center" timestamp="1588954766080">
+    <state width="1897" height="252" key="GridCell.Tab.0.center" timestamp="1592144457777">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="252" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1588954766080" />
+    <state width="1897" height="252" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1592144457777" />
     <state width="1833" height="403" key="GridCell.Tab.0.center/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018188" />
     <state width="1827" height="340" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888295" />
-    <state width="1897" height="252" key="GridCell.Tab.0.left" timestamp="1588954766080">
+    <state width="1897" height="252" key="GridCell.Tab.0.left" timestamp="1592144457777">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="252" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1588954766080" />
+    <state width="1897" height="252" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1592144457777" />
     <state width="1833" height="403" key="GridCell.Tab.0.left/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018188" />
     <state width="1827" height="340" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888295" />
-    <state width="1897" height="252" key="GridCell.Tab.0.right" timestamp="1588954766080">
+    <state width="1897" height="252" key="GridCell.Tab.0.right" timestamp="1592144457777">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1897" height="252" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1588954766080" />
+    <state width="1897" height="252" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1592144457777" />
     <state width="1833" height="403" key="GridCell.Tab.0.right/64.27.1856.1053@64.27.1856.1053" timestamp="1584701018189" />
     <state width="1827" height="340" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1586945888295" />
     <state width="1897" height="305" key="GridCell.Tab.1.bottom" timestamp="1588953458354">
@@ -249,6 +248,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1920" y="124" width="1638" height="706" key="dock-window-2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1586948567677" />
+    <state x="1001" y="144" width="618" height="783" key="find.popup" timestamp="1592141346190">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="1001" y="144" width="618" height="783" key="find.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1592141346190" />
     <state x="623" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1587481741667">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

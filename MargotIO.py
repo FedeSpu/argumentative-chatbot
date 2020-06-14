@@ -1,3 +1,4 @@
+# MARGOT IO WINDOW
 import subprocess as sub
 from pathlib import Path
 import os
@@ -27,6 +28,7 @@ class MargotIO:
     def show(self):
         self.base.deiconify()
 
+    # Open margot process, create input.txt file with input of user
     def _calculate(self):
         input_user = self.inputTxt.get(1.0, END)
         if len(input_user) > 0:
@@ -54,13 +56,16 @@ class MargotIO:
     def dispose(self):
         self.base.destroy()
 
+    # Analise margot output file
     def __analise(self):
         amo = AnaliseMargotOut()
         ev = amo.get_all_evidence()
         cl = amo.get_all_claim()
         cl_ev = amo.get_all_claim_evidence()
+        # Return first n (in this case 3) phrases of dataset that match the first evidence
         return sim.get_n_similarity_ev(ev[0], 3)
 
+    # Return all the evidence of the margot file
     def get_ev(self):
         if hasattr(self, 'ev'):
             return self.ev

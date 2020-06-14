@@ -1,3 +1,4 @@
+# MAIN WINDOW
 import nltk
 from nltk.stem import WordNetLemmatizer
 import pickle
@@ -9,6 +10,7 @@ import time
 from tkinter import *
 from MargotIO import MargotIO
 import os.path
+import choiceLabel
 
 global isClosing
 
@@ -87,10 +89,15 @@ def getResponse(ints, intents_json):
             result = random.choice(i['responses'])
             break
     if tag == 'options':
-        result = result + ' [say run margot, margot, analise]'
+        result = result + " [say 'run margot', 'margot', 'analise']"
+    elif tag == 'margot':
+        result = result + "\n[say 'show' for showing results]"
     elif tag == 'show':
         # result = margot.get_ev()[0][0]
         result = ev_to_str(margot.get_ev())
+        choiceLab = choiceLabel.create(ChatLog)
+        # destroy element after clicking a button
+        choiceLab.pack(side='bottom')
     return result
 
 
