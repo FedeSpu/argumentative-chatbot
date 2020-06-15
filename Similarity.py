@@ -43,10 +43,12 @@ def get_n_similarity_ev(user_input, n):
         userSh = user.reshape(1, len(user))
         res.append((cosine_similarity(rowSh, userSh)[0][0], i))
     res.sort(reverse=True)
-    best = res[:n]
+    # Cosine similarity filter n*4 result, the n filter is renforcement
+    best = res[:n*4]
     # After filtering with cosine similarity, call renforcement learning
-    indices = renf.getN(3, [item[1] for item in best], len(matrix.toarray()), user_input)
-    best_res = [(evArr[item[1]], item[0]) for item in best]
+    indices = renf.getN(n, [item[1] for item in best], len(matrix.toarray()), user_input)
+    best = [item for item in best if item[1] in indices]
+    best_res = [(evArr[item[1]], item[0], item[1]) for item in best]
     # Best one (string, confidence)
     return best_res
 

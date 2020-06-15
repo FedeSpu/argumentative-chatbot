@@ -11,6 +11,7 @@ from tkinter import *
 from MargotIO import MargotIO
 import os.path
 import choiceLabel
+import renforcement as renf
 
 global isClosing
 
@@ -64,7 +65,7 @@ def bow(sentence, words, show_details=True):
                 # assign 1 if current word is in the vocabulary position
                 bag[i] = 1
                 if show_details:
-                    print ("found in bag: %s" % w)
+                    print("found in bag: %s" % w)
     return np.array(bag)
 
 
@@ -95,8 +96,7 @@ def getResponse(ints, intents_json):
     elif tag == 'show':
         # result = margot.get_ev()[0][0]
         result = ev_to_str(margot.get_ev())
-        choiceLab = choiceLabel.create(ChatLog)
-        # destroy element after clicking a button
+        choiceLab = choiceLabel.create(ChatLog, margot.get_ev(), margot.get_ev_user()[0])
         choiceLab.pack(side='bottom')
     return result
 
@@ -142,4 +142,6 @@ scrollbar.place(x=776, y=6, height=386)
 ChatLog.place(x=6, y=6, height=386, width=770)
 EntryBox.place(x=128, y=401, height=90, width=665)
 SendButton.place(x=6, y=401, height=90)
+# Define closing behavior
+# base.protocol("WM_DELETE_WINDOW", renf.save_vocabulary())
 base.mainloop()

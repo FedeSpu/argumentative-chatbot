@@ -52,7 +52,9 @@ class MargotIO:
             p.communicate()
             self.ev = self.__analise()
             print("Finish")
-            self.dispose()
+            # self.dispose()
+            self.hide()
+            os.chdir(python_cwd)
 
     def dispose(self):
         self.base.destroy()
@@ -60,11 +62,17 @@ class MargotIO:
     # Analise margot output file
     def __analise(self):
         amo = AnaliseMargotOut()
-        ev = amo.get_all_evidence()
+        self.evUser = amo.get_all_evidence()
         cl = amo.get_all_claim()
         cl_ev = amo.get_all_claim_evidence()
         # Return first n (in this case 3) phrases of dataset that match the first evidence
-        return sim.get_n_similarity_ev(ev[0], 3)
+        return sim.get_n_similarity_ev(self.evUser[0], 3)
+
+    def get_ev_user(self):
+        if hasattr(self, 'evUser'):
+            return self.evUser
+        else:
+            return None
 
     # Return all the evidence of the margot file
     def get_ev(self):
