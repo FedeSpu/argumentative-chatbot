@@ -3,6 +3,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from ReadDataSet import ReadDataSet
 import numpy as np
 import os.path
+import renforcement as renf
 
 
 def __get_cv(file_name, arr):
@@ -43,8 +44,8 @@ def get_n_similarity_ev(user_input, n):
         res.append((cosine_similarity(rowSh, userSh)[0][0], i))
     res.sort(reverse=True)
     best = res[:n]
-    # Old method: best_res = map(lambda el: (evArr[el[1]], el[0]), best) and after list(best_res)
-    # print(list(best_res))
+    # After filtering with cosine similarity, call renforcement learning
+    indices = renf.getN(3, [item[1] for item in best], len(matrix.toarray()), user_input)
     best_res = [(evArr[item[1]], item[0]) for item in best]
     # Best one (string, confidence)
     return best_res

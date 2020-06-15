@@ -64,10 +64,6 @@ class MargotIO:
         cl = amo.get_all_claim()
         cl_ev = amo.get_all_claim_evidence()
         # Return first n (in this case 3) phrases of dataset that match the first evidence
-        # Filter with cosine similarity
-        filtered = sim.get_n_similarity_ev(ev[0], 10)
-        provaLista = [(item[1]) for item in filtered]
-        renf.getN(3, provaLista, ev[0])
         return sim.get_n_similarity_ev(ev[0], 3)
 
     # Return all the evidence of the margot file
