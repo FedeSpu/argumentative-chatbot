@@ -66,6 +66,7 @@ class MargotIO:
         cl = amo.get_all_claim()
         cl_ev = amo.get_all_claim_evidence()
         # Return first n (in this case 3) phrases of dataset that match the first evidence
+        # If there is no evidence console error is given
         return sim.get_n_similarity_ev(self.evUser[0], 3)
 
     def get_ev_user(self):

@@ -11,7 +11,6 @@ from tkinter import *
 from MargotIO import MargotIO
 import os.path
 import choiceLabel
-import renforcement as renf
 
 global isClosing
 
