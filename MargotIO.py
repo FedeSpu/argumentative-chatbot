@@ -25,6 +25,7 @@ class MargotIO:
 
     def hide(self):
         self.base.withdraw()
+        self.inputTxt.delete('1.0', END)
 
     def show(self):
         self.base.deiconify()

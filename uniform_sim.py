@@ -16,7 +16,7 @@ def uniform_input(arr_voc, user_input):
 
     res.sort(reverse=True)
     print(res)
-    if res[0][0] > 0.4:
+    if res[0][0] > 0.7:
         return list(arr_voc)[res[0][1]]
     else:
         return user_input

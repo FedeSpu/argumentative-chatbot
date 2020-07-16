@@ -1,1 +1,7 @@
 venv/
+.idea/
+__pycache__/
+CoseFatte.docx
+OreTesi.xlsx
+Similarity_prova.py
+prova_renforcement.py

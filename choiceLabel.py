@@ -9,7 +9,7 @@ def create(root, ev_res, ev_user):
     b = Button(baseLab, text='None', command=lambda: baseLab.destroy())
     b.grid(row=0, column=1)
     for i in range(len(ev_res)):
-        b = Button(baseLab, text=str(i+1), command=lambda: vote(ev_res[i], ev_user, baseLab))
+        b = Button(baseLab, text=str(i+1), command=lambda i=i: vote(ev_res[i], ev_user, baseLab))
         b.grid(row=0, column=i+2)
     return baseLab
 

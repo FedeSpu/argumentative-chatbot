@@ -25,10 +25,12 @@ rangeNum = 100
 def getN(n, indexDS, lenDS, user_input):
     global i, eps, vocabulary
     res = []
+    old_index = -1
     r = random.random()
     randIndex = random.sample(range(len(indexDS)), n)
     # This line check if the input is like one of the key of the vocabulary; if it's not, return the input
-    user_input = unif.uniform_input(vocabulary.keys(), user_input)
+    if os.path.exists(file_name):
+        user_input = unif.uniform_input(vocabulary.keys(), user_input)
     if user_input not in vocabulary:
         vocabulary[user_input] = np.zeros(lenDS, dtype=int)
     for j in range(n):
@@ -39,14 +41,30 @@ def getN(n, indexDS, lenDS, user_input):
         if r < eps:
             # Random choice on input array of index
             index = randIndex[j]  # random.randrange(len(indexDS))
+            res_tmp = indexDS[index]
         else:
             # Choice by old knowledge
             # Get lower index in old knowledge while index is in the filtered array
+            list_copy = vocabulary[user_input].copy()
             while True:
-                index = np.argmax(vocabulary[user_input])
+                index = np.argmax(list_copy)
+                if index == 0 and index not in res:
+                    res_tmp = indexDS[randIndex[j]]
+                    break
+                elif index in res:
+                    list_copy[np.argmax(list_copy)] = 0
+                else:
+                    res_tmp = index
+                    break
+                """
+                # If the choice of user is not in filtered 
+                if index == 0:
+                    index = randIndex[j]
+                    break
                 if index in indexDS:
                     break
-        res_tmp = indexDS[index]
+                else:
+                    list_copy[np.argmax(list_copy)] = 0"""
         i += 1
         res.append(res_tmp)
     return res
