@@ -13,8 +13,8 @@ Questi due passaggi sono contestuali all'utilizzo del chatbot così fornito. Ovv
 
 ## Funzionamento
 Il programma funziona solo su Linux
-1) Da terminale scrivere /venv/bin/python3.7 Gui.py 
-2) Aperto il programma bisognerà digitare "margot" e inserire una frase argomentativa IN INGLESE (una sola verrà selezionata, anche in caso di più       
+1) Digitare su terminale "/venv/bin/python3.7 Gui.py" 
+2) Aperto il programma, bisognerà digitare "margot" e inserire una frase argomentativa IN INGLESE (una sola verrà selezionata, anche in caso di più       
    argomentazioni)
 3) Cliccare "Conferma". Se la casella (dopo alcuni secondi) scomparirà, l'operazione sarà andata a buon fine (proseguire punto 4), se invece il tasto conferma
    tornerà ad essere cliccabile, ma la casella non sarà scomparsa, allora nella vostra frase non è stata rilevata alcuna argomentazione. Chiudere il programma
@@ -22,4 +22,4 @@ Il programma funziona solo su Linux
 4) Digitando "show" verranno mostrate 3 frasi correlate al vostro input. Scegliere quella che più si avvicina all'idea espressa nell'input, votando il numero
    corrispondente (la prima risposta mostrata avrà numero 1) nell'apposita barra che comparirà insieme alle risposte. Se la barra scompare, il vostro voto
    sarà andato a buon fine. 
-5) Ripetere i punti dal 2) al 4) a piacimento. Per chiudere digitare "bye"
+5) È possibile ripetere i punti dal 2) al 4). Per terminare il programma basta digitare "bye"
