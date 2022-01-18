@@ -27,3 +27,11 @@ Il programma funziona solo su Linux
    corrispondente (la prima risposta mostrata avrà numero 1) nell'apposita barra che comparirà insieme alle risposte. Se la barra scompare, il vostro voto
    sarà andato a buon fine. 
 5) È possibile ripetere i punti dal 2) al 4). Per terminare il programma basta digitare "bye"
+
+## Immagini
+- Schermata iniziale:  
+![start-screen](/Images/start_screen.png)
+- Input:  
+![input-screen](/Images/input.png)
+- Output con possibilità di voto:  
+![output-reinf](/Images/output-reinforcement.png)
