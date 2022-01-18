@@ -1,5 +1,9 @@
 # Chatbot argomentativo
 
+Il chatbot è pensato per l'uso da parte di utenti più o meno esperti, grazie anche all'inserimento di contesti di "contorno" (possibilità di salutare e ricevere risposta, per esempio).  
+Il chatbot accetta come input una frase argomentativa da parte dell'utente e, sfruttando le potenzialità dell'**argumentation mining** e di [MARGOT](http://margot.disi.unibo.it/), presenta come output una serie di tesi, estratte da Wikipedia, inerenti all'argomentazione in input.   
+L'utente potrà inoltre selezionare la tesi che ritiene più inerente, andando ad attivare meccanismi di **reinforcement learning**
+
 ## Setup Chatbot Framework
 I contesti di risposta del chatbot ("greetings",...) possono essere definiti nel file *intents.json* secondo la grammatica JSON. Per rendere effettive le modifiche bisogna
 eseguire *MainProg.py*. 
